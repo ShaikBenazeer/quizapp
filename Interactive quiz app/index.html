@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="front_css.css">
+  <link rel="stylesheet" href="contact.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="icon" href="1_quiz logo.jpg" type="image/icon type">
+
+  <script>
+    scrollingElement = (document.scrollingElement || document.body)
+function scrollToBottom () {
+   scrollingElement.scrollTop = scrollingElement.scrollHeight;
+}
+function scrollToTop (id) {
+   scrollingElement.scrollTop = 0;
+}
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="header">
+    <!--<h2>Scroll Down</h2>
+  <p>Scroll down to see the sticky effect.</p>-->
+    <img id="header-image">
+    <div class="cpm-logo"></div>
+    <!-- <button onClick="scrollToBottom()">Scroll to Bottom</button>
+<button onClick="scrollSmoothToBottom()">Scroll <b>Smooth</b> to Bottom</button> -->
+  </div>
+
+
+  <div id="navbar">
+    <a class="active" href="index.html">Home</a>
+    <a href="title.html">Titles</a>
+    <a href="javascript:void(0)"><button onClick="scrollToBottom()">Contact</button></a>
+  </div>
+  <br>
+
+  <div class="What_we_do">
+
+    <img src="what we do.png">
+
+  </div>
+  <br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span><a href="title.html"><img
+      id="front2" src="lets start.jpg"></a></span>
+  <div>
+    <br>
+  
+  </div>
+  <br>
+  <br>
+
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+
+  <!-- Start Contact Me -->
+  <div class="contact-me">
+    <div class="container">
+      <div class="info">
+        <h2>Contact Me</h2>
+        <p class="paragrph">"I'm currently a student at Sagi Ramakrishnma Raju Engineering College, Bhimavaram, 
+          majoring in computer science and engineering for a four-year program. I have practical experience in creating websites. 
+          I aim to align my expertise in full-stack development with my career aspirations in this field."</p>
+        <address class="paragrph1">
+        
+        </address>
+        <p class="paragrph">
+          <strong>Email:</strong>&nbsp&nbsp&nbsp<a href="mailto:nirbhaynarayansingh807@gmail.com "><button><span class="material-icons">
+            email </span></button></a><br>
+          <strong>Phone:</strong>&nbsp&nbsp<a href="tel:8290708303"><button><span class="material-icons">
+            call</span></button></a>
+        </p>
+      </div>
+      <form class="form">
+        <label>Name *</label>
+        <input type="text" name="Name" value="Enter Name">
+        <label>Email Adress *</label>
+        <input type="email" name="Email Adress" value="Emter mail Adress">
+        <label>Message *</label>
+        <textarea name="Message" rows="10" cols="80"></textarea>
+        <input type="submit" name="Contact Me" value="Contact Me">
+      </form>
+    </div>
+  </div>
+  <!-- End Contact Me -->
+
+ 
+
+  <!-- End Fototer -->
+
+</body>
+
+</html>
